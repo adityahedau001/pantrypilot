@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+:root {
+  /* Pantry shelf, after dark — deep green-black backdrop for parchment index cards */
+  --pp-shelf: #1b2318;
+  --pp-shelf-raised: #232d1e;
+  --pp-parchment: #f1ead2;
+  --pp-parchment-dim: #e7dfc4;
+  --pp-ink: #22241c;
+  --pp-ink-soft: #4c4f41;
+  --pp-paprika: #c1440e;
+  --pp-paprika-soft: #e6d2c4;
+  --pp-mustard: #d4a017;
+  --pp-sage: #7c9473;
+  --pp-sage-soft: #dbe4d3;
+  --pp-line: #d8cea9;
+}
+
+@theme inline {
+  --color-shelf: var(--pp-shelf);
+  --color-shelf-raised: var(--pp-shelf-raised);
+  --color-parchment: var(--pp-parchment);
+  --color-parchment-dim: var(--pp-parchment-dim);
+  --color-ink: var(--pp-ink);
+  --color-ink-soft: var(--pp-ink-soft);
+  --color-paprika: var(--pp-paprika);
+  --color-paprika-soft: var(--pp-paprika-soft);
+  --color-mustard: var(--pp-mustard);
+  --color-sage: var(--pp-sage);
+  --color-sage-soft: var(--pp-sage-soft);
+  --color-line: var(--pp-line);
+
+  --font-display: var(--font-fraunces);
+  --font-body: var(--font-public-sans);
+  --font-utility: var(--font-plex-mono);
+}
+
+body {
+  background: var(--pp-shelf);
+  color: var(--pp-parchment);
+  font-family: var(--font-body);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+.index-card {
+  background: var(--pp-parchment);
+  color: var(--pp-ink);
+  border: 1px solid var(--pp-line);
+  box-shadow: 0 1px 0 rgba(0,0,0,0.06), 0 8px 20px -12px rgba(0,0,0,0.5);
+}
+
+.paper-hole {
+  width: 10px;
+  height: 10px;
+  border-radius: 9999px;
+  background: var(--pp-shelf);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.4);
+}
+
+::selection {
+  background: var(--pp-mustard);
+  color: var(--pp-ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--pp-mustard);
+  outline-offset: 2px;
+}

@@ -140,3 +140,24 @@ and the UI shows a "the pantry shelf is unreachable" state instead of crashing
 (`src/components/StateBanner.tsx`).
 
 ## 7. Screenshots
+
+Pantry Match — empty state
+<img width="1440" height="1024" alt="01-home-empty" src="https://github.com/user-attachments/assets/499b8eb7-336c-44ff-9bd2-48887c2f287c" />
+
+Pantry Match — ingredients added
+<img width="1440" height="1024" alt="02-home-pantry-filled" src="https://github.com/user-attachments/assets/54dc9168-e657-4ae1-bf7e-dd7d8cf50d38" />
+
+Pantry Match — results with substitution matches
+<img width="1440" height="2805" alt="03-home-results" src="https://github.com/user-attachments/assets/21c3249b-9ecb-4cc1-9cc5-2a4b1431b6d9" />
+
+Recipe detail — with swap & pairing suggestions
+<img width="1440" height="1311" alt="04-recipe-detail" src="https://github.com/user-attachments/assets/786278eb-7caf-4275-91af-f304af90d282" />
+
+Flavor Bridge — tracing Cheddar to Tomato across the graph
+<img width="1440" height="1024" alt="05-flavor-bridge" src="https://github.com/user-attachments/assets/5759f6b4-7264-4194-b7b4-75d1009239d2" />
+
+
+
+
+
+
